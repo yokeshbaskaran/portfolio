@@ -28,8 +28,8 @@ const ProjectItem = (props: ProjectItemProps) => {
           {repositoriesList.slice(1).map((repos) => (
             <div key={repos.id}>
               <div className="px-3 py-5 flex flex-col gap-3 bg-mainBgCol border border-slate-600 rounded-lg hover:bg-slate-800 hover:-translate-y-1 transition-transform shadow-lg duration-300 ease-out">
-                <div className="capitalize text-xl flex justify-start items-start gap-2 text-mainTextCol opacity-90">
-                  <span className="text-2xl">
+                <div className="capitalize text-xl flex justify-start items-start gap-2 text-[#D1D1D1]">
+                  <span className="text-2xl text-mainTextCol">
                     <RiBookMarkedFill />
                   </span>
                   <span className="lowercase underline">{repos.name}</span>
@@ -42,7 +42,7 @@ const ProjectItem = (props: ProjectItemProps) => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="pl-1  underline text-green-500 ">
+                    <span className="pl-1  underline  text-violet-400">
                       {repos.full_name}
                     </span>
                   </a>
@@ -57,7 +57,7 @@ const ProjectItem = (props: ProjectItemProps) => {
                   <h2 className="text-sm text-gray-500">
                     Live Page:
                     <a href={repos?.homepage} target="_blank" rel="noreferrer">
-                      <span className="pl-1  underline text-violet-400">
+                      <span className="pl-1  underline  text-green-500">
                         {repos.homepage}
                       </span>
                     </a>
