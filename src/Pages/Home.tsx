@@ -21,7 +21,7 @@ export const imgMotion = (duration: number) => ({
       duration: duration,
       ease: "linear",
       repeat: Infinity,
-      repeatType: "reverse",
+      repeatType: "reverse" as const,
     },
   },
 });
