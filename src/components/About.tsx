@@ -9,16 +9,23 @@ import vscode from "../../public/logo/vscode.png";
 import git from "../../public/logo/git.png";
 import github from "../../public/logo/github.png";
 import android from "../../public/logo/android.png";
+import { motionFun } from "../Pages/Home";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
     <>
       <main className="w-[90%] mx-auto py-8 text-white grid grid-cols-4 gap-4 text-lg">
         <section className="col-span-4">
-          <h2 className="m-2 mb-8 text-white text-center text-5xl font-semibold">
+          <motion.h2
+            variants={motionFun(1.5)}
+            initial="hidden"
+            animate="visible"
+            className="m-2 mb-8 text-white text-center text-5xl font-semibold"
+          >
             About
             <span className="text-mainTextCol"> Me!</span>
-          </h2>
+          </motion.h2>
           <div className="m-2 capitalize text-xl relative">
             <span className="text-mainTextCol text-2xl absolute">
               <FaCode />
@@ -40,9 +47,14 @@ const About = () => {
         </section>
 
         <section className="w-full col-span-2 max-md:col-span-4 max-md:p-3">
-          <h2 className="text-center my-8 text-mainTextCol text-4xl font-bold">
+          <motion.h2
+            variants={motionFun(1.5)}
+            initial="hidden"
+            animate="visible"
+            className="text-center my-8 text-mainTextCol text-4xl font-bold"
+          >
             Tech Stack
-          </h2>
+          </motion.h2>
 
           <div>
             <h2 className="text-xl font-medium">Languages known:</h2>
@@ -67,9 +79,14 @@ const About = () => {
         </section>
 
         <section className="w-full col-span-2 max-md:col-span-4 max-md:p-1">
-          <h2 className="text-center my-8 text-mainTextCol text-4xl font-bold">
+          <motion.h2
+            variants={motionFun(1.5)}
+            initial="hidden"
+            animate="visible"
+            className="text-center my-8 text-mainTextCol text-4xl font-bold"
+          >
             What I Do?
-          </h2>
+          </motion.h2>
           <div>
             <ol className="list-des text-justify tracking-wide text-xl flex gap-5 flex-col">
               <li>

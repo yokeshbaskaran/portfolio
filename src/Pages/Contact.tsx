@@ -1,11 +1,13 @@
 import profileImg from "../../public/images/profile.png";
 import SocialLinks from "../components/SocialLinks";
+import { motionFun } from "../Pages/Home";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   return (
     <>
       <main className="  h-[85vh] py-8 bg-secBgCol text-white">
-        <section className="  w-[90%] h-[70vh] mx-auto flex justify-center items-center">
+        <section className="  w-[90%] h-[70vh] mx-auto flex justify-center items-center gap-8">
           <div className="w-1/4 max-md:hidden">
             <div className="w-[85%] mx-auto border-2 border-white rounded-full ">
               <img src={profileImg} alt="profile-image" />
@@ -13,9 +15,14 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-col gap-5 items-center">
-            <h2 className="text-5xl text-center">
+            <motion.h2
+              variants={motionFun(0)}
+              initial="hidden"
+              animate="visible"
+              className="text-5xl text-center"
+            >
               Contact <span className="text-mainTextCol font-bold">Me!</span>
-            </h2>
+            </motion.h2>
 
             <div className=" ">
               <SocialLinks />

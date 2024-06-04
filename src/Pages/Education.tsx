@@ -3,14 +3,21 @@ import psg from "../../public/images/psg.png";
 import svvb from "../../public/images/svvb.png";
 import { coursesList } from "../data/db";
 import CertifyItem from "../components/CertifyItem";
+import { motionFun } from "../Pages/Home";
+import { motion } from "framer-motion";
 
 const Education = () => {
   return (
     <>
       <main className="bg-secBgCol text-white">
-        <h2 className="py-8 text-center text-5xl text-mainTextCol">
+        <motion.h2
+          variants={motionFun(0)}
+          initial="hidden"
+          animate="visible"
+          className="py-8 text-center text-5xl text-mainTextCol"
+        >
           Education & Certifications
-        </h2>
+        </motion.h2>
         <h2 className="py-5 text-center text-5xl">Education</h2>
         <section className="mt-5 w-[80%] mx-auto p-5 flex max-md:flex-col gap-1 max-md:gap-5 justify-between items-center ">
           <div className="w-[28%] max-md:w-[70%] max-sm:w-[95%]">

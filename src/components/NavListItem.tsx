@@ -39,12 +39,6 @@ export const NavItem = ({
   selected,
   setSelected,
 }: NavItemProps) => {
-  console.log("/////////");
-  console.log("1. text", text);
-  console.log("2. linkURLName", linkURLName);
-  console.log("3. selected", selected);
-  console.log("/////////");
-
   return (
     <button
       onClick={() => setSelected(text)}

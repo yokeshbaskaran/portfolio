@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import ProjectItem from "../components/ProjectItem";
 import { useProfileContext } from "../context/ProfileContext";
+import { motionFun } from "../Pages/Home";
+import { motion } from "framer-motion";
 
 const Projects = () => {
   const { userData } = useProfileContext();
@@ -16,7 +18,14 @@ const Projects = () => {
   return (
     <>
       <main className="py-5 bg-secBgCol min-h-screen text-white">
-        <h2 className="py-3 text-center text-5xl uppercase">Projects</h2>
+        <motion.h2
+          variants={motionFun(0)}
+          initial="hidden"
+          animate="visible"
+          className="py-3 text-center text-5xl uppercase"
+        >
+          Projects
+        </motion.h2>
         {repsURL && (
           <div className="my-3 text-white">
             <ProjectItem repsURL={repsURL} />
