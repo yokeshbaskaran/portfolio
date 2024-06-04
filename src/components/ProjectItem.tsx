@@ -28,7 +28,7 @@ const ProjectItem = (props: ProjectItemProps) => {
           {repositoriesList.slice(1).map((repos) => (
             <div key={repos.id}>
               <div className="px-3 py-5 flex flex-col gap-3 bg-mainBgCol border border-slate-600 rounded-lg hover:bg-slate-800 hover:-translate-y-1 transition-transform shadow-lg duration-300 ease-out">
-                <div className="capitalize text-xl flex justify-start items-start gap-2 text-blue-600">
+                <div className="capitalize text-xl flex justify-start items-start gap-2 text-mainTextCol opacity-90">
                   <span className="text-2xl">
                     <RiBookMarkedFill />
                   </span>
