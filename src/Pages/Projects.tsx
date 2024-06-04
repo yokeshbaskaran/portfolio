@@ -1,7 +1,42 @@
-import React from "react";
+import { useEffect, useState } from "react";
+import ProjectItem from "../components/ProjectItem";
+import { useProfileContext } from "../context/ProfileContext";
 
 const Projects = () => {
-  return <div>Projects</div>;
+  const { userData } = useProfileContext();
+  const [repsURL, setRepsURL] = useState<string | undefined>("");
+
+  useEffect(() => {
+    if (userData && userData.repos_url) {
+      setRepsURL(userData.repos_url); // Ensure repos_url is a string
+    }
+    // console.log(userData);
+  }, [userData]);
+
+  return (
+    <>
+      <main className="py-5 bg-secBgCol min-h-screen text-white">
+        <h2 className="py-3 text-center text-5xl uppercase">Projects</h2>
+        {repsURL && (
+          <div className="my-3 text-white">
+            <ProjectItem repsURL={repsURL} />
+            {userData?.repos_url && (
+              <div className="my-8 text-center ">
+                <a
+                  className="p-5 text-xl rounded-md border-2 border-mainBgCol hover:text-black hover:bg-white shadow-lg"
+                  href={userData?.html_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  More Projects
+                </a>
+              </div>
+            )}
+          </div>
+        )}
+      </main>
+    </>
+  );
 };
 
 export default Projects;
