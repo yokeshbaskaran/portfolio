@@ -12,6 +12,17 @@ import html from "../../public/logo/html.png";
 import css from "../../public/logo/css.png";
 import js from "../../public/logo/js.png";
 
+export const socialMediaLinks = [
+  {
+    linkName: "LinkedIn",
+    linkURL: "https://www.linkedin.com/in/yokeshbaskaran/",
+  },
+  {
+    linkName: "GitHub",
+    linkURL: " https://github.com/yokeshbaskaran ",
+  },
+];
+
 export const navLinks = [
   { linkName: "Home", linkURL: "" },
   { linkName: "Education", linkURL: "education" },

@@ -22,7 +22,7 @@ const Projects = () => {
           variants={motionFun(0)}
           initial="hidden"
           animate="visible"
-          className="py-3 text-center text-5xl uppercase"
+          className="py-3 text-center text-5xl font-semibold uppercase"
         >
           Projects
         </motion.h2>

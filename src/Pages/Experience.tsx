@@ -11,7 +11,7 @@ const Experience = () => {
           variants={motionFun(0)}
           initial="hidden"
           animate="visible"
-          className="py-8 text-center text-5xl"
+          className="py-8 text-center font-semibold text-5xl"
         >
           InternShips & Experience
         </motion.h2>

@@ -29,7 +29,7 @@ export const imgMotion = (duration: number) => ({
 const Home = () => {
   return (
     <div className="bg-mainBgCol">
-      <section className="w-[90%] mx-auto min-h-[75vh] max-md:min-h-[60vh] max-md:py-8 p-3 flex justify-center items-center gap-5 max-md:flex-col max-md:gap-14">
+      <section className="w-[90%] mx-auto min-h-[78vh] max-md:min-h-[60vh] max-md:py-8 p-3 flex justify-center items-center gap-5 max-md:flex-col max-md:gap-14">
         <div className=" overflow-hidden w-2/3 max-md:w-full p-2 text-white flex flex-col justify-center items-start gap-4">
           <motion.h2
             variants={motionFun(0)}

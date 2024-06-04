@@ -14,7 +14,7 @@ const Education = () => {
           variants={motionFun(0)}
           initial="hidden"
           animate="visible"
-          className="py-8 text-center text-5xl text-mainTextCol"
+          className="py-8 text-center font-semibold text-5xl text-mainTextCol"
         >
           Education & Certifications
         </motion.h2>

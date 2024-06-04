@@ -15,10 +15,10 @@ import { motion } from "framer-motion";
 const About = () => {
   return (
     <>
-      <main className="w-[90%] mx-auto py-8 text-white grid grid-cols-4 gap-4 text-lg">
+      <main className="w-[90%] mx-auto py-5 text-white grid grid-cols-4 gap-4 text-lg">
         <section className="col-span-4">
           <motion.h2
-            variants={motionFun(1.5)}
+            variants={motionFun(2.5)}
             initial="hidden"
             animate="visible"
             className="m-2 mb-8 text-white text-center text-5xl font-semibold"
@@ -36,19 +36,19 @@ const About = () => {
               web development technologies like HTML, CSS and JavaScript.
             </p>
           </div>
-          <div className="m-2 capitalize text-xl relative">
+          {/* <div className="m-2 capitalize text-xl relative">
             <span className="text-mainTextCol text-2xl absolute">
               <FaCode />
             </span>
             <p className="indent-10 text-gray-200 tracking-widest text-justify text-2xl">
               And also
             </p>
-          </div>
+          </div> */}
         </section>
 
         <section className="w-full col-span-2 max-md:col-span-4 max-md:p-3">
           <motion.h2
-            variants={motionFun(1.5)}
+            variants={motionFun(4)}
             initial="hidden"
             animate="visible"
             className="text-center my-8 text-mainTextCol text-4xl font-bold"
@@ -80,7 +80,7 @@ const About = () => {
 
         <section className="w-full col-span-2 max-md:col-span-4 max-md:p-1">
           <motion.h2
-            variants={motionFun(1.5)}
+            variants={motionFun(4)}
             initial="hidden"
             animate="visible"
             className="text-center my-8 text-mainTextCol text-4xl font-bold"

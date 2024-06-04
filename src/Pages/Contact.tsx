@@ -19,9 +19,9 @@ const Contact = () => {
               variants={motionFun(0)}
               initial="hidden"
               animate="visible"
-              className="text-5xl text-center"
+              className="text-5xl text-center font-semibold"
             >
-              Contact <span className="text-mainTextCol font-bold">Me!</span>
+              Contact <span className="text-mainTextCol">Me!</span>
             </motion.h2>
 
             <div className=" ">

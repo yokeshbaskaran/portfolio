@@ -22,7 +22,9 @@ const ProjectItem = (props: ProjectItemProps) => {
 
   return (
     <>
-      {!repositoriesList.length && <p>No Repos found.</p>}
+      {!repositoriesList.length && (
+        <p className="text-center">No Repos found.</p>
+      )}
       {!!repositoriesList.length && (
         <section className="w-[90%] mx-auto grid grid-cols-1 grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 sm:gap-5 p-3">
           {repositoriesList.slice(1).map((repos) => (

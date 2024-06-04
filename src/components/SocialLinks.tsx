@@ -1,5 +1,9 @@
 import { FaLinkedinIn } from "react-icons/fa";
 import { IoLogoGithub } from "react-icons/io";
+import { socialMediaLinks } from "../data/db";
+
+const linkedinURL = socialMediaLinks[0].linkURL;
+const githubURL = socialMediaLinks[1].linkURL;
 
 const SocialLinks = () => {
   return (
@@ -7,10 +11,14 @@ const SocialLinks = () => {
       <div className="social">
         <ul className="w-1/2 py-1 flex items-start justify-start gap-5">
           <span>
-            <FaLinkedinIn />
+            <a href={linkedinURL} target="_blank">
+              <FaLinkedinIn />
+            </a>
           </span>
           <span>
-            <IoLogoGithub />
+            <a href={githubURL} target="_blank">
+              <IoLogoGithub />
+            </a>
           </span>
         </ul>
       </div>
