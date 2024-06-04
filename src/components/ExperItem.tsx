@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+import { motionFun } from "../Pages/Home";
 import { ImageContainer, ImageSlot } from "../utilities/ImageSlot";
 
 interface TechStack {
@@ -23,7 +25,12 @@ const ExperItem: React.FC<ExperProps> = ({ data }: ExperProps) => {
   return (
     <>
       <main className="w-[90%] p-5 md:w-[75%] mx-auto">
-        <section className=" rounded-md overflow-hidden shadow-xl">
+        <motion.section
+          variants={motionFun(0.75)}
+          initial="hidden"
+          animate="visible"
+          className="rounded-xl overflow-hidden shadow-xl"
+        >
           <div className="p-5 bg-mainBgCol">
             <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center text-md">
               <p className="text-2xl text-mainTextCol uppercase">
@@ -59,7 +66,7 @@ const ExperItem: React.FC<ExperProps> = ({ data }: ExperProps) => {
               </ImageContainer>
             </div>
           </div>
-        </section>
+        </motion.section>
       </main>
     </>
   );

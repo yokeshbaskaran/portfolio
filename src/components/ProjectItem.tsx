@@ -26,7 +26,7 @@ const ProjectItem = (props: ProjectItemProps) => {
         <p className="text-center">No Repos found.</p>
       )}
       {!!repositoriesList.length && (
-        <section className="w-[90%] mx-auto grid grid-cols-1 grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 sm:gap-5 p-3">
+        <section className="w-[95%] mx-auto grid grid-cols-1 grid-rows-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-8 sm:gap-5 p-3">
           {repositoriesList.slice(1).map((repos) => (
             <div key={repos.id}>
               <div className="px-3 py-5 flex flex-col gap-3 bg-mainBgCol border border-slate-600 rounded-lg hover:bg-slate-800 hover:-translate-y-1 transition-transform shadow-lg duration-300 ease-out">

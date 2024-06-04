@@ -11,7 +11,7 @@ const Navbar: React.FC = () => {
     const handleScroll = () => {
       if (window.scrollY > 70) {
         setIsNavOpen(false);
-        console.log("srcoll value", window.scrollY);
+        // console.log("srcoll value", window.scrollY);
       }
     };
 

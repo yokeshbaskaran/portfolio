@@ -19,21 +19,27 @@ const Education = () => {
           Education & Certifications
         </motion.h2>
         <h2 className="py-5 text-center text-5xl">Education</h2>
-        <section className="mt-5 w-[80%] mx-auto p-5 flex max-md:flex-col gap-1 max-md:gap-5 justify-between items-center ">
-          <div className="w-[28%] max-md:w-[70%] max-sm:w-[95%]">
+
+        <section className="mt-5 w-[75%] max-sm:w-[95%] max-md:w-[85%] mx-auto p-3 flex max-md:flex-col gap-1 max-md:gap-5 justify-between items-center ">
+          <div className="w-[30%] py-2  max-md:w-[70%] max-sm:w-[85%] overflow-hidden">
             <AcademyImg imageURL={psg} />
           </div>
-          <section className="w-[70%] max-md:w-[75%] max-sm:w-[95%] rounded-md overflow-hidden shadow-xl">
+
+          <section className="w-[70%] max-md:w-[90%] max-sm:w-[95%]  rounded-md overflow-hidden shadow-xl">
             <div className="p-5 bg-mainBgCol">
-              <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center text-md">
+              <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center gap-2 text-md">
                 <p className="text-2xl">
                   PSG College of Arts & Science (College)
                 </p>
                 <span>2018-2023</span>
               </div>
-              <p className="font-semibold">
-                Master's degree in Software systems
-              </p>
+              <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center gap-2 text-md">
+                <p className="text-lg font-semibold">
+                  Master's degree in Software systems
+                </p>
+                <span>Coimbatore, TamilNadu</span>
+              </div>
+              <p className="font-semibold"></p>
             </div>
 
             <div className="px-3 py-5 bg-secBgCol font-light flex flex-col gap-3">
@@ -53,19 +59,24 @@ const Education = () => {
           </section>
         </section>
 
-        <section className="mt-5 w-[80%] mx-auto p-5 flex max-md:flex-col gap-1 max-md:gap-5 justify-between items-center ">
-          <div className="w-[28%] max-md:w-[70%] max-sm:w-[95%]">
+        <section className="mt-5 w-[75%] max-sm:w-[95%] max-md:w-[85%] mx-auto p-3 flex max-md:flex-col gap-1 max-md:gap-5 justify-between items-center ">
+          <div className="  w-[30%] py-2  max-md:w-[70%] max-sm:w-[85%] overflow-hidden">
             <AcademyImg imageURL={svvb} />
           </div>
-          <section className="w-[70%] max-md:w-[75%] max-sm:w-[95%] rounded-md overflow-hidden shadow-xl">
+
+          <section className="  w-[70%] max-md:w-[90%] max-sm:w-[95%]  rounded-md overflow-hidden shadow-xl">
             <div className="p-5 bg-mainBgCol">
-              <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center text-md">
+              <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center gap-2 text-md">
                 <p className="text-2xl">
                   Sri Vijay Vidyalaya, Dharmapuri (School)
                 </p>
                 <span>2016-2018</span>
               </div>
-              <p className="font-semibold">SSLC & HSC</p>
+              <div className="py-1 flex flex-wrap max-md:flex-col max-md:items-start  justify-between items-center gap-2 text-md">
+                <p className="text-lg font-semibold">HSC & SSLC</p>
+                <span>Dharmapuri, TamilNadu</span>
+              </div>
+              <p className="font-semibold"></p>
             </div>
 
             <div className="px-3 py-5 bg-secBgCol font-light flex flex-col gap-3">

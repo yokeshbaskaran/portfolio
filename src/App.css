@@ -12,10 +12,10 @@
   list-style-type: none;
 
   /*for transition in page*/
-  transition-property: color, background-color, border-color,
+  /* transition-property: color, background-color, border-color,
     text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 200ms;
+  transition-duration: 200ms; */
 }
 
 :root {
@@ -54,10 +54,11 @@ header {
 /*  Social_Links  */
 
 .social ul span {
-  padding: 10px;
+  padding: 12px;
   border: 2px solid var(--main_color);
   border-radius: 50%;
   color: var(--main_color);
+  cursor: pointer;
 }
 
 .social ul span:hover {

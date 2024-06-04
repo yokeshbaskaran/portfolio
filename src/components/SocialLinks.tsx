@@ -9,7 +9,7 @@ const SocialLinks = () => {
   return (
     <>
       <div className="social">
-        <ul className="w-1/2 py-1 flex items-start justify-start gap-5">
+        <ul className="w-1/2 py-1 flex items-start justify-start gap-6 text-xl">
           <span>
             <a href={linkedinURL} target="_blank">
               <FaLinkedinIn />
