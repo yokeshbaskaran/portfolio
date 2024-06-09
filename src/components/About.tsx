@@ -90,6 +90,10 @@ const About = () => {
           <div>
             <ol className="list-des text-justify tracking-wide text-xl flex gap-5 flex-col">
               <li>
+                Develops interactive Front end / User Interfaces (UI) in the web
+                applications
+              </li>
+              <li>
                 With a keen eye for design and a love for crafting seamless user
                 experiences, I thrive on turning ideas into beautifully
                 functional websites and web applications.
@@ -97,10 +101,6 @@ const About = () => {
               <li>
                 Familiar with building responsive webites for different devices
                 and Designing highly attractive user interface for web
-                applications
-              </li>
-              <li>
-                Develops interactive Front end / User Interfaces (UI) in the web
                 applications
               </li>
             </ol>

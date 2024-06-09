@@ -68,7 +68,7 @@ const Home = () => {
           </motion.div>
         </div>
         <motion.div
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: 20, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           transition={{ duration: 1, delay: 1 }}
           className="w-1/3 max-md:w-[95%]"
