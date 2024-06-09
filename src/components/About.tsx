@@ -32,8 +32,8 @@ const About = () => {
             </span>
             <p className="indent-10 text-gray-200 tracking-widest text-justify text-2xl">
               A Developer who wants to build responsive projects. And expertise
-              in HTML, CSS, JavaScript, React, and Node.js. Strong Foundation in
-              web development technologies like HTML, CSS and JavaScript.
+              in HTML, CSS, JavaScript, React.js, and Node.js. Strong Foundation
+              in web development technologies like HTML, CSS and JavaScript.
             </p>
           </div>
           {/* <div className="m-2 capitalize text-xl relative">
