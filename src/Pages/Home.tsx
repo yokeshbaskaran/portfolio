@@ -3,6 +3,7 @@ import profileImg from "../../public/images/profile.png";
 import SocialLinks from "../components/SocialLinks";
 import About from "../components/About";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const motionFun = (delay: number) => ({
   hidden: { x: -100, opacity: 0 },
@@ -63,7 +64,9 @@ const Home = () => {
           >
             <SocialLinks />
             <button className="resume-btn px-4 py-3 bg-mainTextCol rounded-lg text-black text-lg hover:shadow-none">
-              See My Resume
+              <Link to="https://drive.google.com/file/d/1i1sDWXLnoY6YEZ5dsccJ0rIOcsCtZX41/view?usp=drive_link">
+                See My Resume
+              </Link>
             </button>
           </motion.div>
         </div>

@@ -2,6 +2,7 @@ import profileImg from "../../public/images/profile.png";
 import SocialLinks from "../components/SocialLinks";
 import { motionFun } from "../Pages/Home";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -27,8 +28,11 @@ const Contact = () => {
             <div className=" ">
               <SocialLinks />
             </div>
+
             <button className="resume-btn px-4 py-3 bg-mainTextCol rounded-lg text-black text-lg hover:shadow-none">
-              See My Resume
+              <Link to="https://drive.google.com/file/d/1i1sDWXLnoY6YEZ5dsccJ0rIOcsCtZX41/view?usp=drive_link">
+                See My Resume
+              </Link>
             </button>
           </div>
         </section>
