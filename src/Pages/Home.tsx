@@ -1,5 +1,5 @@
 import { FaCode } from "react-icons/fa6";
-import profileImg from "../../public/images/profile.png";
+import profileImg from "/images/profile.png";
 import SocialLinks from "../components/SocialLinks";
 import About from "../components/About";
 import { motion } from "framer-motion";

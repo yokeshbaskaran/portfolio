@@ -1,14 +1,14 @@
 import { FaCode } from "react-icons/fa6";
 import { ImageContainer, ImageSlot } from "../utilities/ImageSlot";
-import html from "../../public/logo/html.png";
-import css from "../../public/logo/css.png";
-import js from "../../public/logo/js.png";
-import react from "../../public/logo/react.png";
-import node from "../../public/logo/node.png";
-import vscode from "../../public/logo/vscode.png";
-import git from "../../public/logo/git.png";
-import github from "../../public/logo/github.png";
-import android from "../../public/logo/android.png";
+import html from "/logo/html.png";
+import css from "/logo/css.png";
+import js from "/logo/js.png";
+import react from "/logo/react.png";
+import node from "/logo/node.png";
+import vscode from "/logo/vscode.png";
+import git from "/logo/git.png";
+import github from "/logo/github.png";
+import android from "/logo/android.png";
 import { motionFun } from "../Pages/Home";
 import { motion } from "framer-motion";
 

@@ -1,4 +1,4 @@
-import profileImg from "../../public/images/profile.png";
+import profileImg from "/images/profile.png";
 import SocialLinks from "../components/SocialLinks";
 import { motionFun } from "../Pages/Home";
 import { motion } from "framer-motion";

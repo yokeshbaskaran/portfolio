@@ -1,6 +1,6 @@
 import { AcademyImg } from "../components/EducationItems";
-import psg from "../../public/images/psg.png";
-import svvb from "../../public/images/svvb.png";
+import psg from "/images/psg.png";
+import svvb from "/images/svvb.png";
 import { coursesList } from "../data/db";
 import CertifyItem from "../components/CertifyItem";
 import { motionFun } from "../Pages/Home";

@@ -1,16 +1,16 @@
-import meta from "../../public/images/meta.jpg";
-import kpcss from "../../public/images/kp_css.jpeg";
-import udemy from "../../public/images/udemy.jpg";
-import oracle from "../../public/logo/oracle.png";
-import sql from "../../public/logo/sql.png";
-import xml from "../../public/logo/xml.png";
-import firebase from "../../public/logo/firebase.png";
-import android from "../../public/logo/android.png";
-import github from "../../public/logo/github.png";
-import php from "../../public/logo/php.png";
-import html from "../../public/logo/html.png";
-import css from "../../public/logo/css.png";
-import js from "../../public/logo/js.png";
+import meta from "/images/meta.jpg";
+import kpcss from "/images/kp_css.jpeg";
+import udemy from "/images/udemy.jpg";
+import oracle from "/logo/oracle.png";
+import sql from "/logo/sql.png";
+import xml from "/logo/xml.png";
+import firebase from "/logo/firebase.png";
+import android from "/logo/android.png";
+import github from "/logo/github.png";
+import php from "/logo/php.png";
+import html from "/logo/html.png";
+import css from "/logo/css.png";
+import js from "/logo/js.png";
 
 export const socialMediaLinks = [
   {
