@@ -64,7 +64,8 @@ const Home = () => {
           >
             <SocialLinks />
             <button className="resume-btn px-4 py-3 bg-mainTextCol rounded-lg text-black text-lg hover:shadow-none">
-              <Link to="https://drive.google.com/file/d/1i1sDWXLnoY6YEZ5dsccJ0rIOcsCtZX41/view?usp=drive_link">
+            {/* <Link to="https://drive.google.com/file/d/1i1sDWXLnoY6YEZ5dsccJ0rIOcsCtZX41/view?usp=drive_link"> */}
+              <Link to="https://drive.google.com/file/d/1dhEhkiG22047vLjxUymsEq7HfV2y7rjD/view?usp=sharing">
                 See My Resume
               </Link>
             </button>
